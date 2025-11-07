@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: initial;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Calculator Box with animated glow */
+.calculator{
+    background: #3a4452;
+    padding: 20px;
+    border-radius: 10px;
+    animation: boxGlow 3s infinite alternate ease-in-out;
+}
+
+/* Box Glow Animation */
+@keyframes boxGlow {
+    0% {
+        box-shadow: 0 0 15px #e35c2f, 0 0 30px #e3e291;
+    }
+    50% {
+        box-shadow: 0 0 30px #5ba94c, 0 0 60px #10a90b;
+    }
+    100% {
+        box-shadow: 0 0 15px #4f4fae, 0 0 30px #04b48e;
+    }
+}
+
+
+.calculator{
+    background: #3a4452;
+    padding: 20px;
+    border-radius: 10px;
+}
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(134, 168, 9, 0.1),5px 5px 15px rgba(121, 211, 11, 0.2);
+    background-color:  transparent;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+}
+
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+    
+}
+form input.equal{
+    width: 145px;
+}
+form input.operator{
+    color: #33ffd3;
+}
